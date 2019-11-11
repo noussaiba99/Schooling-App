@@ -8,7 +8,7 @@
         grpVoulu
         </td>
         <td>
-        demanderpermutation
+        demander permutation
         </td>
         
 </tr>
@@ -25,7 +25,7 @@
         <a href="demande/add">demander</a> 
 
         </td>
-        
+
        
 </tr>
 @endforeach
