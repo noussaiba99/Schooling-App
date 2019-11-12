@@ -20,7 +20,7 @@ class DemandeController extends Controller
         if ($request->isMethod('post'))
         {  // echo $request;
             $newdemande=new Demande();
-            $newdemande->id=$request->input('matricule');
+            $newdemande->id=$request->input('id');
             /*$newdemande->prenom=$request->input('prenom');
             $newdemande->grpActuel=$request->input('grpActuel');*/
             $newdemande->grpDest=$request->input('grpDest');

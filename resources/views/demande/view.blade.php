@@ -1,11 +1,11 @@
-
+<!--
 <table>
 <tr>
         <td>
         matricule 
         </td>
         <td>
-        grpVoulu
+        grpDest
         </td>
         <td>
         demander permutation
@@ -22,7 +22,7 @@
          {{ $demandee->grpDest }}
         </td>
         <td>
-        <a href="demande/add">demander permutation</a> 
+        <a href="/addd">demander permutation</a> 
 
         </td>
 
@@ -30,3 +30,18 @@
 </tr>
 @endforeach
 </table>
+-->
+
+<form action="/addd" method="POST">
+    {{ csrf_field() }}
+    Nom: <input type="text" name="id" placeholder="entrer ton matricule">
+    </br>
+    </br>
+    Prenom: <input type="text" name="grpDest" placeholder="entrer le groupe voulu">
+    </br>
+    </br>
+    <input type="submit" value="Demander permutation">
+
+    </form>
+</body>
+</html> 

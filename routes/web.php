@@ -38,8 +38,8 @@ Route::post('/modifier',"EtudiantController@modifier");
 Route::get('/modifier',"EtudiantController@modifier");
 
 Route::get('/demande',"DemandeController@viewDemande");
-Route::get('/demande/add',"DemandeController@addDemande");
-Route::post('/demande/add',"DemandeController@addDemande");
+Route::get('/addd',"DemandeController@addDemande");
+Route::post('/addd',"DemandeController@addDemande");
 
 
 Auth::routes();

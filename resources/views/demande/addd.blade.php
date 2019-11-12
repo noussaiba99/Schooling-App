@@ -1,5 +1,5 @@
 
-    <form action="/add" method="POST">
+    <form action="/addd" method="POST">
     {{ csrf_field() }}
     Nom: <input type="text" name="id" placeholder="entrer ton matricule">
     </br>
