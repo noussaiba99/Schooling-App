@@ -22,7 +22,7 @@
          {{ $demandee->grpDest }}
         </td>
         <td>
-        <a href="demande/add">demander</a> 
+        <a href="demande/add">demander permutation</a> 
 
         </td>
 
