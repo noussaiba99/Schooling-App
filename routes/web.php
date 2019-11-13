@@ -38,9 +38,9 @@ Route::post('/modifier',"EtudiantController@modifier");
 Route::get('/modifier',"EtudiantController@modifier");
 
 Route::get('/demande',"DemandeController@viewDemande");
-Route::get('/addd',"DemandeController@addDemande");
+/*Route::get('/addd',"DemandeController@addDemande");
 Route::post('/addd',"DemandeController@addDemande");
-
+*/
 
 Auth::routes();
 
