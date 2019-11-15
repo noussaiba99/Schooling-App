@@ -30,11 +30,10 @@
 </tr>
 @endforeach
 </table>
--->
+--
 
 <form action="/addd" method="POST">
     {{ csrf_field() }}
-    Matricule <input type="number" name="id" placeholder="entrer ton matricule">
     </br>
     </br>
     Groupe voulu <input type="text" name="grpDest" placeholder="entrer le groupe voulu">
@@ -42,6 +41,24 @@
     </br>
     <input type="submit" value="Demander permutation">
 
-    </form>
-</body>
-</html> 
+</form>-->
+
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                user name : {{ Auth::user()->name }}
+
+                   This is a user profile
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
