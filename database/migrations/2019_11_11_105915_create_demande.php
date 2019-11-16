@@ -14,7 +14,7 @@ class CreateDemande extends Migration
     public function up()
     {
         Schema::create('demandes', function (Blueprint $table) {
-            $table->integer('id');
+            $table->bigIncrements('id');
             $table->string('nom')->default('nom');
             $table->string('prenom')->default('prenom');
             $table->string('grpActuel')->default('grpActuel');

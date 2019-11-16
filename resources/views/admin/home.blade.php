@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Profil</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,25 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    user name : {{ Auth::user()->name }}
+                    <br>
+                    <br>
+                    email :  {{ Auth::user()->email}}
+
+                        <form action="/home" method="POST">
+                        {{ csrf_field() }}
+                       
+                        Prenom: <input type="number" name="grpDest" placeholder="entrer le groupe voulu">
+                        </br>
+                        </br>
+                        <input type="submit" value="Demander permutation">
+
+    </form>
+
+
+                 
+
+
                 </div>
             </div>
         </div>

@@ -44,5 +44,7 @@ Route::post('/addd',"DemandeController@addDemande");
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('admin.home');
-Route::get('/home', "adminController@home");
+//Route::get('/home', "adminController@home");
+
+Route::get('/home', 'HomeController@index');
+Route::post('/home', 'HomeController@demande');

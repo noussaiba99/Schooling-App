@@ -55,7 +55,7 @@
                 <div class="card-body">
                 user name : {{ Auth::user()->name }}
 
-                   This is a user profile
+                   This is a demande
                 </div>
             </div>
         </div>
