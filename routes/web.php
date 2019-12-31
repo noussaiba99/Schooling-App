@@ -38,13 +38,11 @@ Route::post('/modifier',"EtudiantController@modifier");
 Route::get('/modifier',"EtudiantController@modifier");
 
 Route::get('/demande',"DemandeController@viewDemande");
-/*Route::get('/addd',"DemandeController@addDemande");
-Route::post('/addd',"DemandeController@addDemande");
-*/
+Route::get('/demande/add',"DemandeController@addDemande");
+Route::post('/demande/add',"DemandeController@addDemande");
+
 
 Auth::routes();
 
-//Route::get('/home', "adminController@home");
-
-Route::get('/home', 'HomeController@index');
-Route::post('/home', 'HomeController@demande');
+//Route::get('/home', 'HomeController@index')->name('admin.home');
+Route::get('/home', "adminController@home");
