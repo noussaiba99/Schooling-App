@@ -12,37 +12,28 @@
 */
 use tp_Igl\Etudiant;
 use tp_Igl\Demande;
+use tp_Igl\User;
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/contact/{id}/{name}',"adminController@contact" );
+});*/
 
-Route::get('/product',"productController@Viewproduct");
-Route::get('/etudiant',"EtudiantController@viewEtudiant");
+Route::get('/',"HomeController@index");
 
-Route::post('/add',"EtudiantController@addEtudiant");
-Route::get('/add',"EtudiantController@addEtudiant");
-Route::get('/add/{id}',function($id)
-{
-    $etudiant=Etudiant::find($id);
-    $etudiant->delete();
-    return redirect("etudiant");
-}
-);
+Route::get('/etudiant',"EtudiantController@demande");
+Route::post('/add', "EtudiantController@demande");
 
-Route::post('/modifier/{id}',"EtudiantController@modifierEtudiant");
-Route::get('/modifier/{id}',"EtudiantController@modifierEtudiant");
+Route::get('/add', "EtudiantController@demande");
 
-Route::post('/modifier',"EtudiantController@modifier");
-Route::get('/modifier',"EtudiantController@modifier");
 
-Route::get('/demande',"DemandeController@viewDemande");
-Route::get('/demande/add',"DemandeController@addDemande");
-Route::post('/demande/add',"DemandeController@addDemande");
+Route::get('/admin',"adminController@home");
+
+
 
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('admin.home');
-Route::get('/home', "adminController@home");
+//Route::get('/home', "adminController@home");
+
+/*Route::get('/home', 'HomeController@index');
+Route::post('/home', 'HomeController@demande');*/

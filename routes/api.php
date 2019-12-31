@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 
+use tp_Igl\User;
+use tp_Igl\Demande;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,6 +16,29 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+/*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-});
+});*/
+
+
+
+
+/*Route::get('/', function () {
+    return view('welcome');
+});*/
+
+Route::get('/',"HomeController@index");
+
+Route::get('/etudiant',"EtudiantController@demande");
+Route::post('/add', "EtudiantController@demande");
+
+Route::get('/add', "EtudiantController@demande");
+
+
+Route::get('/admin',"adminController@home");
+
+
+
+
+Auth::routes();
+Route::middleware('auth:api')->get('/user',"adminController@requestt");
