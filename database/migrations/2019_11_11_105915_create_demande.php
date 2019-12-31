@@ -15,6 +15,7 @@ class CreateDemande extends Migration
     {
         Schema::create('demandes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('email')->default('email');
             $table->string('nom')->default('nom');
             $table->string('prenom')->default('prenom');
             $table->string('grpActuel')->default('grpActuel');
