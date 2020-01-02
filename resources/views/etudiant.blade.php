@@ -1,40 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ajouter Etudiant</title>
-</head>
-<body>
+@extends('layouts.app')
 
-     <form action="add" method="POST">
-                        {{ csrf_field() }}
-                       
-                        Grp voulu: <input type="number" name="grpDest" placeholder="entrer le groupe voulu">
-                        </br>
-                        </br>
-                        <input type="submit" value="Demander permutation" name="form1">
-                    </br></br></br></br></br></br>
+@section('content')
 
-    </form>
+<change-group>{{ csrf_field() }}</change-group>
 
+<change-password> {{ csrf_field() }} </change-password>
 
-     <!--form action="add" method="POST">
-    {{ csrf_field() }}
-    ancien mot de passe: <input type="text" name="ancienM" placeholder="entrer votre ancien mot de passe">
-    </br>
-    </br>
-    nouveau mot de passe: <input type="text" name="nvM" placeholder="entrer votre nouveau mot de passe">
-    </br>
-    </br>
-   Confirmer mot de passe: <input type="text" name="cnvM" placeholder="confirmer votre mot de passe">
-    </br>
-    </br>
-    <input type="submit" value="Enregistrer" name="form2">
-    </form>-->
-
-    <div class="panel-heading"><h1>Changer mot de passe</h1></div>
+ <!--   <div class="panel-heading"><h1>Changer mot de passe</h1></div>
 
                 <div class="panel-body">
                     @if (session('error'))
@@ -47,6 +19,11 @@
                                 {{ session('success') }}
                             </div>
                         @endif
+
+
+
+
+
                     <form class="form-horizontal" method="POST" action="add">
                         {{ csrf_field() }}
 
@@ -96,6 +73,8 @@
                     </form>
                 </div>
             </div>
+-->
 
-</body>
-</html>
+@endsection
+
+

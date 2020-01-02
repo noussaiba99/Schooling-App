@@ -8,13 +8,14 @@ use tp_Igl\Demande;
 use tp_Igl\Etudiant;
 use tp_Igl\User;
 
-use tp_Igl\Http\Controllers\Auth;
+use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
-    
+
     public function index()
     {
+        if (Auth::check()) return view('etudiant');
         return view('auth.login');
     }
-    
+
 }

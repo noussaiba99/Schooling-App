@@ -31,63 +31,66 @@ class EtudiantController extends Controller
      */
     public function index()
     {
-        return view('etudiant.add');
+        return view('etudiant');
     }
     public function demande(Request $request)
     {
-         //only excute when post
-         if ($request->isMethod('post'))
-         {  // echo $request;
-            if ($request->has('form1')) 
+        //only excute when post
+        if ($request->isMethod('post'))
+        {  // echo $request;
+            if ($request->has('form1'))
             {
 
-             $newdemande=new Demande();
-             $emaill= auth()->user()->email;
-             $nomm=auth()->user()->nom;
-             $prenomm=auth()->user()->prenom;
-             $groupe=auth()->user()->groupe;
+                $newdemande=new Demande();
+                $emaill= auth()->user()->email;
+                $nomm=auth()->user()->nom;
+                $prenomm=auth()->user()->prenom;
+                $groupe=auth()->user()->groupe;
 
-             $newdemande->email=$emaill;
-             $newdemande->nom=$nomm;
-             $newdemande->prenom=$prenomm;
-             $newdemande->grpActuel=$groupe;
-             $newdemande->grpDest=$request->input('grpDest');
-             $newdemande->save();
+                $user_id=User::select('id')->where('email',$emaill)->first();
+                $etudiant=User::find($user_id)->first();
+                if (!$etudiant->permute) {
 
-            
-             $user_id=User::select('id')->where('email',$emaill)->first();
-             $etudiant=User::find($user_id)->first();
-             $etudiant->permute=1;
-             $etudiant->save(); 
 
-             }
-             if ($request->has('form2')) 
-             {
-                       if (!(Hash::check($request->get('current-password'), auth()->user()->password))) {
-                    // The passwords matches
-                    return redirect()->back()->with("error","les 2 mots de passe sont pas compatibles.");
+                    $newdemande->email=$emaill;
+                    $newdemande->nom=$nomm;
+                    $newdemande->prenom=$prenomm;
+                    $newdemande->grpActuel=$groupe;
+                    $newdemande->grpDest=$request->input('grpDest');
+                    $newdemande->save();
+
+                    $etudiant->permute=1;
+                    $etudiant->save();
                 }
+            }
+            if ($request->has('form2'))
+            {
 
-                if(strcmp($request->get('current-password'), $request->get('new-password')) == 0){
-                    //Current password and new password are same
-                    return redirect()->back()->with("error","le nouveau mot de passe est exactement comme l'ancien. SVP choisissez un nouveau.");
-                }
+                    if (!(Hash::check($request->get('current-password'), auth()->user()->password))) {
+                // The passwords matches
+                return redirect()->back()->with("error","les 2 mots de passe sont pas compatibles.");
+            }
 
-                $validatedData = $request->validate([
-                    'current-password' => 'required',
-                    'new-password' => 'required|string|min:6|confirmed',
-                ]);
+            if(strcmp($request->get('current-password'), $request->get('new-password')) == 0){
+                //Current password and new password are same
+                return redirect()->back()->with("error","le nouveau mot de passe est exactement comme l'ancien. SVP choisissez un nouveau.");
+            }
 
-                //Change Password
-                $user = auth()->user();
-                $user->password = bcrypt($request->get('new-password'));
-                $user->save();
+            $validatedData = $request->validate([
+                'current-password' => 'required',
+                'new-password' => 'required|string|min:6|confirmed',
+            ]);
 
-                return redirect()->back()->with("success","votre mot de passe a été changé avec succés");
-             }  
-            
-         }
-        return view('etudiant.add');
+            //Change Password
+            $user = auth()->user();
+            $user->password = bcrypt($request->get('new-password'));
+            $user->save();
+
+            return redirect()->back()->with("success","votre mot de passe a été changé avec succés");
+            }
+
+        }
+        return view('etudiant');
     }
      public function render($request, Exception $exception)
 {

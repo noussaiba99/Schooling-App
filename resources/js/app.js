@@ -16,10 +16,15 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+// const files = require.context('./', true, /\.vue$/i)
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('login', require('./components/Login.vue').default);
+Vue.component('change-group', require('./components/ChangeGroup.vue').default);
+Vue.component('change-password', require('./components/ChangePassword.vue').default);
+Vue.component('demandes', require('./components/Demandes.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,3 +35,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+
+var csrf_token = $('meta[name="csrf-token"]').attr('content');
+

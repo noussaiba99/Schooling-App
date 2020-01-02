@@ -1,9 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
+<!--
+<login todo = "{{ route('login') }}" > @csrf
+
+    @error('email')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+
+    @error('password')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+
+
+</login>
+-->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+
+
+
+
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
@@ -67,7 +89,11 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </di>
     </div>
 </div>
+
+
+
+
 @endsection
