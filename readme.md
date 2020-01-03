@@ -3,7 +3,7 @@
 ## About the architecture
 ![Architecture of the project](https://github.com/noussaiba99/tp_Igl/blob/master/soa.PNG)
 
-## Intructions to test project localy:
+## Intructions to test the project localy:
 1. Clone GitHub repo for this project locally
 `git clone https://github.com/noussaiba99/tp_Igl projectName`
 
