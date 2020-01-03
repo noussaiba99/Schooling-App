@@ -1,6 +1,13 @@
 # TP IGL
 the project aims to facilitate the organization of the permutaions between groups.
 
+## Team members:
+
+. [Saoud Abderraouf](https://github.com/saoudiabderraouf)
+. [Aboutaleb Noussaiba](https://github.com/noussaiba99)
+. [Mimene Younes](https://github.com/younes38)
+. 
+
 ## About the architecture
 ![Architecture of the project](https://github.com/noussaiba99/tp_Igl/blob/master/soa.PNG)
 
