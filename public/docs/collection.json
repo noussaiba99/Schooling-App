@@ -1,0 +1,155 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Laravel API",
+        "_postman_id": "687421d0-6cf2-4a10-bae6-f8f41f716e1a",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "general",
+            "description": "",
+            "item": [
+                {
+                    "name": "Authentification Checking.",
+                    "request": {
+                        "url": "http:\/\/localhost\/api",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "the function will check :\nif the user is already login then it will return the Etudiant's profile page,\nelse it will return the login\/registration page.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Make a Group Swap or Password change.",
+                    "request": {
+                        "url": "http:\/\/localhost\/api\/etudiant",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "the function will check :\nif the $request is Method post :\n\n\nthen if it has form1 :\nit will make a new permutation Demande\n\nelse if it has form2 :\nit will change the current User's Password",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Make a Group Swap or Password change.",
+                    "request": {
+                        "url": "http:\/\/localhost\/api\/add",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "the function will check :\nif the $request is Method post :\n\n\nthen if it has form1 :\nit will make a new permutation Demande\n\nelse if it has form2 :\nit will change the current User's Password",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Make a Group Swap or Password change.",
+                    "request": {
+                        "url": "http:\/\/localhost\/api\/add",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "the function will check :\nif the $request is Method post :\n\n\nthen if it has form1 :\nit will make a new permutation Demande\n\nelse if it has form2 :\nit will change the current User's Password",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Shows the Swap Requests.",
+                    "request": {
+                        "url": "http:\/\/localhost\/api\/admin",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "the function will retrieve all data from Database wich correspond to the Demandes\nsent by Etudiants and Display them in the Admin Page..",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Display the password reset view for the given token.",
+                    "request": {
+                        "url": "http:\/\/localhost\/api\/password\/reset\/{token}",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "If no token is present, display the link request form.",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}
