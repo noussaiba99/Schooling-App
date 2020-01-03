@@ -5,8 +5,8 @@
 
                 <h2>Change Your Group</h2>
                 <div>Enter your desired group's number</div>
-                <input type="number" name="grpDest" placeholder="Group number ..." />
-                <input id="button" type="submit" value="Submit" name="form1">
+                <input  type="number" id = "group" name="grpDest" placeholder="Group number ..." />
+                <input type="submit" id= "btn"  value="Submit" name="form1">
                 <slot>
                 </slot>
             </form>
@@ -42,7 +42,7 @@
         margin: 0;
     }
 
-    #button {
+    #btn {
         border-radius: 20px;
         border: 1px solid #266eda;
         background-color: #266eda;

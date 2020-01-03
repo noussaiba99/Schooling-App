@@ -6564,7 +6564,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".cont[data-v-fad667d8] {\n  padding-top: 10 px;\n  /*position: relative; */\n  float: left;\n  width: 50%;\n  height: 638px;\n  border-radius: 10px;\n  overflow: hidden;\n  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);\n  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ccc));\n  background: linear-gradient(to bottom, #efefef, #ccc);\n}\nh2[data-v-fad667d8] {\n  margin: 0;\n}\n#button[data-v-fad667d8] {\n  border-radius: 20px;\n  border: 1px solid #266eda;\n  background-color: #266eda;\n  color: #fff;\n  font-size: 1rem;\n  font-weight: bold;\n  padding: 10px 40px;\n  margin-top: 30px;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  cursor: pointer;\n  -webkit-transition: -webkit-transform 0.1s ease-in;\n  transition: -webkit-transform 0.1s ease-in;\n  transition: transform 0.1s ease-in;\n  transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;\n}\n#button[data-v-fad667d8]:active {\n  -webkit-transform: scale(0.9);\n          transform: scale(0.9);\n}\n#button[data-v-fad667d8]:focus {\n  outline: none;\n}\nform[data-v-fad667d8] {\n  /*position: absolute;\n  */\n  top: 0;\n  display: -webkit-box;\n  display: flex;\n  margin-left: 10%;\n  -webkit-box-align: center;\n          align-items: center;\n  justify-content: space-around;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  padding: 90px 60px;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  width: 80%;\n  height: 100%;\n  /*calc(100% - 180px);*/\n  text-align: center;\n  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ccc));\n  background: linear-gradient(to bottom, #efefef, #ccc);\n  -webkit-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nform div[data-v-fad667d8] {\n  font-size: 1rem;\n  padding-top: 0px;\n  margin-top: 0px;\n  margin-bottom: 50px;\n}\nform h2[data-v-fad667d8] {\n  margin-top: 10px;\n  padding-top: 0px;\n}\nform input[data-v-fad667d8] {\n  background-color: #eee;\n  border: none;\n  padding: 15px 15px;\n  margin: 8px 0;\n  width: calc(100% - 30px);\n  border-radius: 15px;\n  border-bottom: 1px solid #ddd;\n  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 -1px 1px #fff, 0 1px 0 #fff;\n  overflow: hidden;\n}\nform input[data-v-fad667d8]:focus {\n  outline: none;\n  background-color: #fff;\n}", ""]);
+exports.push([module.i, ".cont[data-v-fad667d8] {\n  padding-top: 10 px;\n  /*position: relative; */\n  float: left;\n  width: 50%;\n  height: 638px;\n  border-radius: 10px;\n  overflow: hidden;\n  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);\n  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ccc));\n  background: linear-gradient(to bottom, #efefef, #ccc);\n}\nh2[data-v-fad667d8] {\n  margin: 0;\n}\n#btn[data-v-fad667d8] {\n  border-radius: 20px;\n  border: 1px solid #266eda;\n  background-color: #266eda;\n  color: #fff;\n  font-size: 1rem;\n  font-weight: bold;\n  padding: 10px 40px;\n  margin-top: 30px;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  cursor: pointer;\n  -webkit-transition: -webkit-transform 0.1s ease-in;\n  transition: -webkit-transform 0.1s ease-in;\n  transition: transform 0.1s ease-in;\n  transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;\n}\n#btn[data-v-fad667d8]:active {\n  -webkit-transform: scale(0.9);\n          transform: scale(0.9);\n}\n#btn[data-v-fad667d8]:focus {\n  outline: none;\n}\nform[data-v-fad667d8] {\n  /*position: absolute;\n  */\n  top: 0;\n  display: -webkit-box;\n  display: flex;\n  margin-left: 10%;\n  -webkit-box-align: center;\n          align-items: center;\n  justify-content: space-around;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  padding: 90px 60px;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  width: 80%;\n  height: 100%;\n  /*calc(100% - 180px);*/\n  text-align: center;\n  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ccc));\n  background: linear-gradient(to bottom, #efefef, #ccc);\n  -webkit-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nform div[data-v-fad667d8] {\n  font-size: 1rem;\n  padding-top: 0px;\n  margin-top: 0px;\n  margin-bottom: 50px;\n}\nform h2[data-v-fad667d8] {\n  margin-top: 10px;\n  padding-top: 0px;\n}\nform input[data-v-fad667d8] {\n  background-color: #eee;\n  border: none;\n  padding: 15px 15px;\n  margin: 8px 0;\n  width: calc(100% - 30px);\n  border-radius: 15px;\n  border-bottom: 1px solid #ddd;\n  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 -1px 1px #fff, 0 1px 0 #fff;\n  overflow: hidden;\n}\nform input[data-v-fad667d8]:focus {\n  outline: none;\n  background-color: #fff;\n}", ""]);
 
 // exports
 
@@ -38169,18 +38169,14 @@ var render = function() {
           _c("input", {
             attrs: {
               type: "number",
+              id: "group",
               name: "grpDest",
               placeholder: "Group number ..."
             }
           }),
           _vm._v(" "),
           _c("input", {
-            attrs: {
-              id: "button",
-              type: "submit",
-              value: "Submit",
-              name: "form1"
-            }
+            attrs: { type: "submit", id: "btn", value: "Submit", name: "form1" }
           }),
           _vm._v(" "),
           _vm._t("default")
