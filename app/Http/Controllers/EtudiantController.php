@@ -14,6 +14,17 @@ use tp_Igl\User;
 
 class EtudiantController extends Controller
 {
+    public function same($a, $b)
+    {
+        $n = strlen($a);
+        $m = strlen($b);
+        if ($n != $m) return false;
+        for ($i = 0; $i < $n; $i++){
+            if ($a[$i] != $b[$i]) return false;
+        }
+        return true;
+    }
+
     /**
      * Create a new controller instance.
      *
@@ -71,7 +82,7 @@ class EtudiantController extends Controller
                 return redirect()->back()->with("error","les 2 mots de passe sont pas compatibles.");
             }
 
-            if(strcmp($request->get('current-password'), $request->get('new-password')) == 0){
+            if($this->same($request->get('current-password'), $request->get('new-password'))){
                 //Current password and new password are same
                 return redirect()->back()->with("error","le nouveau mot de passe est exactement comme l'ancien. SVP choisissez un nouveau.");
             }
