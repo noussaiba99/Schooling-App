@@ -1,4 +1,5 @@
 # TP IGL
+the project aims to facilitate the organization of the permutaions between groups.
 
 ## About the architecture
 ![Architecture of the project](https://github.com/noussaiba99/tp_Igl/blob/master/soa.PNG)
